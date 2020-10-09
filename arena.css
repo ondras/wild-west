@@ -1,0 +1,63 @@
+body {
+	font-family: verdana;
+	font-size: 80%;
+}
+
+#console {
+	overflow: auto;
+	height: 100px;
+	border: 1px solid #000;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 500px;
+	background-color: #fff;
+	margin: 10px;
+	opacity: 0.7;
+	_position: absolute;
+	_filter: alpha(opacity=70);
+}
+
+#arena-container {
+	margin: 0px;
+	padding: 0px;
+}
+
+#arena {
+	height: 100%;
+	background-image:url(images/background.jpg);
+	position: relative;
+}
+
+#again {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.player {
+	text-align: center;
+	position: absolute;
+}
+
+.player img {
+	margin: auto;
+	margin-top: 3px;
+}
+
+.player div.name {
+	font-weight: bold;
+}
+
+.player div.ai {
+	font-size: 60%;
+	display: none; 
+}
+
+.player.winner {
+	background-color: #ffa;
+}
+
+.player.dead {
+	background-color: #888;
+}
